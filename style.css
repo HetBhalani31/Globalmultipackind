@@ -1,0 +1,544 @@
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Home */
+
+    body {
+        background-color: #f5f1e7;
+        color: #333;
+    }
+
+    header {
+        background-color: #e6d4a7;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .logo img {
+        height: 48px;
+        width: 48px;
+        margin-right: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .search {
+        display: flex;
+    }
+
+    .search input {
+        width: 260px;
+        height: 36px;
+        border: none;
+        border-radius: 28px 0 0 28px;
+        background-color: #D5C7A3;
+        position: relative;
+        right: 10px;
+        padding: 12px;
+    }
+
+    .search::placeholder {
+        text-align: center;
+    }
+
+    .search button {
+        background-color: #0c3067;
+        color: white;
+        position: relative;
+        text-align: center;
+        width: 68px;
+        right: 10px;
+        border-radius: 0 28px 28px 0;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: center;
+        background-color: #f3ede0;
+        padding: 10px;
+        overflow-x: auto;
+        gap: 80px;
+    }
+
+    .category-item {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .category-item img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 5px;
+    }
+
+    .featured {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #fff;
+    }
+
+    .products {
+        display: flex;
+        justify-content: center;
+        gap: 135px;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .product-card {
+        background-color: #f0e3c3;
+        padding: 15px;
+        width: 280px;
+        height: 440px;
+        border-radius: 8px;
+    }
+
+    .product-card img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .product-card h4 {
+        color: #0c3067;
+        text-align: left;
+        position: relative;
+        left: 4px;
+        top: 10px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .product-card p {
+        font-weight: 300;
+        font-size: 16px;
+        text-align: left;
+        position: relative;
+        top: 18px;
+        left: 4px;
+        padding: 3px;
+    }
+
+    .product-card button {
+        background-color: #ddd2b1;
+        color: #0c3067;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        top: 44px;
+        font-weight: bold;
+        margin-top: 10px;
+        width: 162px;
+        height: 44px;
+        align-items: center;
+    }
+
+    .about {
+        background-color: #e2d6ba;
+        padding: 82px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .about-text {
+        max-width: 600px;
+        color: #0c3067;
+    }
+
+    .about-text img {
+        width: 38px;
+        height: 38px;
+        position: relative;
+        top: 18px;
+        left: 48px;
+    }
+
+    .about-text h2 {
+        font-weight: 500;
+        left: -224px;
+        top: -33px;
+        color: #000;
+        position: relative;
+    }
+
+    .about-text h2 span {
+        font-weight: bolder;
+        top: 10px;
+        left: 54px;
+        position: relative;
+    }
+
+    .about-text p {
+        position: relative;
+        top: 0px;
+        left: -48px;
+    }
+
+    .about-icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        position: relative;
+        left: 92px;
+    }
+
+    .about-icons div {
+        background-color: #f3ede0;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 14px;
+        min-width: 150px;
+    }
+
+    .about-btn {
+        padding-top: 20px;
+    }
+
+    .about-btn p {
+        position: relative;
+        top: 14px;
+        font-weight: 600;
+    }
+
+    .about-btn button {
+        padding: 10px 15px;
+        background-color: #F2E2B1;
+        border: none;
+        width: 202px;
+        height: 53px;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        top: 26px;
+        color: #0c3067;
+    }
+
+    /* Our Product  */
+
+    .our_product h2 {
+        text-align: center;
+        padding: 20px 0 10px;
+        color: #0c3067;
+    }
+
+    .title-underline {
+        width: 100px;
+        height: 4px;
+        background-color: #F2E2B1;
+        margin: 0 auto 20px;
+        border-radius: 2px;
+    }
+
+    .our_product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 46px;
+        padding: 0 40px 40px;
+        position: relative;
+        justify-items: center;
+        top: 26px;
+    }
+
+    .our_product-card {
+        background-color: #d8c293;
+        padding: 15px;
+        border-radius: 10px;
+        width: 280px;
+        height: 472px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .our_product-card img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .our_product-card h4 {
+        color: #0c3067;
+        text-align: left;
+        position: relative;
+        left: 4px;
+        top: 10px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .our_product-card p {
+        font-weight: 300;
+        font-size: 16px;
+        text-align: left;
+        position: relative;
+        top: 18px;
+        left: 4px;
+        padding: 3px;
+    }
+
+    .our_product-card button {
+        background-color: #ddd2b1;
+        color: #0c3067;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        top: 44px;
+        font-weight: bold;
+        margin-top: 10px;
+        width: 162px;
+        height: 44px;
+        align-items: center;
+    }
+
+    .our_product-card button:hover {
+        background-color: #e0d4af;
+    }
+
+    .our_product-card .img_dif {
+        width: 252px;
+        height: 252px;
+    }
+
+    /* Review */
+
+    h2 {
+        text-align: center;
+        color: #0c3067;
+        margin-top: 40px;
+    }
+
+    .reviews {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .review-card {
+        background-color: #d8c59e;
+        width: 260px;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .review-card p {
+        margin: -8px 0;
+    }
+
+    .review-card .quo {
+        font-size: 82px;
+    }
+
+    .stars {
+        color: #0c3067;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .avatar {
+        margin-top: 10px;
+    }
+
+    .avatar img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    /* Contact Us */
+
+    .contact-section {
+        background-color: #d6c29b;
+        height: 408px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+
+    .contact-info {
+        max-width: 50%;
+    }
+
+    .contact-info h2 {
+        color: #0c3067;
+        margin-top: 40px;
+        position: relative;
+        text-align: left;
+        left: 6px;
+        font-size: 34px;
+        bottom: 20px;
+    }
+
+    .contact-info p {
+        margin: 8px 0;
+        color: #000;
+        position: relative;
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    .contact-info a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .social-icons_1 a {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .contact-form {
+        background-color: #f0dbab;
+        padding: 20px;
+        border-radius: 8px;
+        width: 620px;
+        height: 316px;
+        position: relative;
+        top: 25px;
+    }
+
+    .contact-form textarea {
+        width: 571px;
+        height: 164px;
+        padding: 8px;
+        border: 2px solid #000;
+        margin-bottom: 10px;
+        resize: none;
+        background-color: #F2E2B1;
+        position: relative;
+        left: 4px;
+    }
+
+    .contact-form button {
+        padding: 10px 15px;
+        background-color: #fff;
+        border: none;
+        width: 202px;
+        height: 53px;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        top: 12px;
+        color: #0c3067;
+        left: 4px;
+    }
+
+    .contact-form label {
+        position: relative;
+        left: 18px;
+        bottom: 2px;
+    }
+
+    /* Footer */
+
+    .footer {
+        background-color: #f8e4a1;
+        height: 250px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .footer-column {
+        flex: 1 1 200px;
+        position: relative;
+        top: 14px;
+        text-align: center;
+    }
+
+    .footer-column h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-column ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .footer-column ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        position: relative;
+        left: 122px;
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-bottom {
+        background-color: #e4e4e4;
+        text-align: center;
+        padding: 10px;
+        height: 50px;
+        position: relative;
+        font-size: 0.9rem;
+        top: 40px;
+    }
+
+    .footer-bottom p,
+    .footer-bottom a{
+        text-align: center;
+        position: relative;
+        top: 4px;
+    }
+
+    .footer-bottom a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .footer-bottom a:hover {
+        text-decoration: underline;
+    }
